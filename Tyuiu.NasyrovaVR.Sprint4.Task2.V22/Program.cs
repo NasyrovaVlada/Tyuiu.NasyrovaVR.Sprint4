@@ -4,53 +4,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.NasyrovaVR.Sprint4.Task1.V7.Lib;
+using Tyuiu.NasyrovaVR.Sprint4.Task2.V22.Lib;
 
-namespace Tyuiu.NasyrovaVR.Sprint4.Task1.V7
+namespace Tyuiu.NasyrovaVR.Sprint4.Task2.V22
 {
     public class Program
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
             DataService ds = new DataService();
 
             Console.Title = "Спринт #4 | Выполнила: Насырова В. Р. | ИИПб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Тема: Одномерные массивы (ввод с клавиатуры)                            *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Тема: Одномерные массивы. (генератор случайных чисел)                   *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #22                                                             *");
             Console.WriteLine("* Выполнила: Насырова Влада Ренатовна | ИИПб-23-3                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан одномерный целочисленный массив на 11 элементов заполненный         *");
-            Console.WriteLine("* статическими значениями в диапазоне от 1 до 7 подсчитать сумму четных   *");
-            Console.WriteLine("* элементов массива. С клавиатуры: 2, 5, 3, 8, 2, 6, 2, 5, 5, 7, 4        *");
+            Console.WriteLine("* Дан одномерный целочисленный массив на 13 элементов заполненный         *");
+            Console.WriteLine("* случайными значениями в диапазоне от 1 до 6 подсчитать сумму нечетных   *");
+            Console.WriteLine("* элементов массива.                                                      *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
 
-            int len;
-            Console.Write("Введите количество элементов массива: ");
-            len = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите количество элементов массива: ");
+            int len = Convert.ToInt32(Console.ReadLine());
             int[] numsArray = new int[len];
 
             for (int i = 0; i <= len - 1; i++)
             {
-                Console.WriteLine("Введите значение " + i + " элемента массива: ");
-                numsArray[i] = Convert.ToInt32(Console.ReadLine());
+                numsArray[i] = rnd.Next(1, 6);
             }
-            Console.WriteLine();
+            
             Console.WriteLine("Массив: ");
-            for (int i = 0; i<=len-1; i++)
+            for (int i = 0; i <= len - 1; i++)
             {
                 Console.Write(numsArray[i] + "\t");
             }
             Console.WriteLine();
-            Console.WriteLine();
-
+            
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
