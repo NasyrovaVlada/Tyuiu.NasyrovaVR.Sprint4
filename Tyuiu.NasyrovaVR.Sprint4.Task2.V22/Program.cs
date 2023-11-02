@@ -25,8 +25,8 @@ namespace Tyuiu.NasyrovaVR.Sprint4.Task2.V22
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан одномерный целочисленный массив на 13 элементов заполненный         *");
-            Console.WriteLine("* случайными значениями в диапазоне от 1 до 6 подсчитать сумму нечетных   *");
-            Console.WriteLine("* элементов массива.                                                      *");
+            Console.WriteLine("* случайными значениями в диапазоне от 1 до 6 подсчитать произведение     *");
+            Console.WriteLine("* нечетных элементов массива.                                             *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
@@ -52,7 +52,7 @@ namespace Tyuiu.NasyrovaVR.Sprint4.Task2.V22
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Сумма нечетных элементов:");
+            Console.WriteLine("Произведение нечетных элементов:");
             int res = ds.Calculate(numsArray);
 
             Console.WriteLine(res);
