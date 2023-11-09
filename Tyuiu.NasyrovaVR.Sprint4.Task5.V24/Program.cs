@@ -19,7 +19,7 @@ namespace Tyuiu.NasyrovaVR.Sprint4.Task5.V24
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: Двумерные массивы. (генератор случайных чисел)                    *");
-            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Задание #5                                                              *");
             Console.WriteLine("* Вариант #24                                                             *");
             Console.WriteLine("* Выполнила: Насырова Влада Ренатовна | ИИПб-23-3                         *");
             Console.WriteLine("***************************************************************************");
